@@ -1,2 +1,3 @@
 app_name: "chalice-scaffold"
 
+api_key: "some-api-key"
