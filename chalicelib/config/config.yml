@@ -1,3 +1,10 @@
-app_name: "chalice-scaffold"
+app_name: "<app-name>"
 
 api_key: "some-api-key"
+
+elastic:
+  url: ""
+  index: ""
+
+sentry:
+  url: ""

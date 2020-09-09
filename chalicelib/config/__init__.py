@@ -9,6 +9,8 @@ import boto3
 
 from chalicelib.commons.errors import ConfigurationError
 
+APP_NAME = os.getenv("APP_NAME")
+
 
 def load():
     """
@@ -54,7 +56,7 @@ def load_aws(stage):
     :returns: dict config
     """
 
-    secret_name = f"crontab/{stage}"
+    secret_name = f"{APP_NAME}/{stage}"
     region_name = "us-east-1"
 
     session = boto3.session.Session()

@@ -7,13 +7,13 @@ lint:
 	pylint ./chalicelib
 
 fmt:
-	black ./chalicelib
+	yapf chalicelib -r -i -vv
 
 test:
 	python -m unittest discover -s tests -v
 
 install:
-	pip3 install pylint black radon
+	pip3 install pylint yapf radon
 	pip3 install -r requirements.txt
 
 venv:

@@ -1,24 +1,24 @@
 {
   "version": "2.0",
-  "app_name": "chalice-scaffold",
+  "app_name": "<app-name>",
   "stages": {
-    "dev": {
-      "api_gateway_stage": "dev",
-      "automatic_layer": true
-    },
     "staging": {
       "environment_variables": {
-          "STAGE": "staging"
+        "STAGE": "staging",
+        "APP_NAME": "<app-name>"
       },
       "api_gateway_stage": "staging",
-      "automatic_layer": true
+      "automatic_layer": true,
+      "autogen_policy": false
     },
     "prod": {
       "environment_variables": {
-          "STAGE": "prod"
+        "STAGE": "prod",
+        "APP_NAME": "<app-name>"
       },
       "api_gateway_stage": "prod",
-      "automatic_layer": true
+      "automatic_layer": true,
+      "autogen_policy": false
     }
   }
 }
